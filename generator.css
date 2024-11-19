@@ -1,0 +1,51 @@
+ 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .editor, .form-preview {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .editor {
+    background-color: #f7f7f7;
+    border-right: 1px solid #ddd;
+  }
+  
+  textarea {
+    width: 100%;
+    height: calc(100% - 50px);
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  #json-input:focus {
+    outline: 2px solid #4caf50;
+  }
+  
+  #error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .form-preview {
+    background-color: #fff;
+  }
+  
+  #generated-form {
+    margin-top: 10px;
+  }
